@@ -171,10 +171,10 @@ $(function () {
   });
 
 
-  $('.pop-up-review').magnificPopup({
+  $('.header__cart').magnificPopup({
     removalDelay: 300,
     items: {
-      src: '#pop-up-review'
+      src: '#cart-rel'
     },
 
     callbacks: {
@@ -183,6 +183,7 @@ $(function () {
       }
     }
   });
+
 
 
   $('.header__search-btn').magnificPopup({

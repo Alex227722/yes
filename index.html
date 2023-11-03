@@ -685,6 +685,7 @@
                               </svg>
                             </button>
                           </div>
+                          
                         </div>
                       </div>
 
@@ -963,7 +964,7 @@
   <main class="main-bg">
 
     <section class="main-swiper-section">
-      <div class="container">
+     
         <div class="main-swiper" id="main-swiper">
           <div class="swiper-button-prev"></div>
 
@@ -1014,7 +1015,7 @@
           <div class="swiper-button-next"></div>
         </div>
    
-      </div>
+     
     </section>
 
     <script>
@@ -1052,9 +1053,13 @@
 
 
         breakpoints: {
-
-          992: {
+          1200: {
             slidesPerView: 2,
+            spaceBetween: 30,
+            touchRatio: 0
+          },
+          992: {
+            slidesPerView: 1,
             spaceBetween: 30,
             touchRatio: 0
           },
@@ -1373,10 +1378,14 @@
 
 
         breakpoints: {
-
-          992: {
+          1200: {
             slidesPerView: 4,
             spaceBetween: 30,
+
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
 
           },
           450: {
@@ -1866,7 +1875,7 @@
                 </a>
               </li>
               <li>
-                <a class="social__link" href="#">
+                <a class="social__link social__link-youtube" href="#">
                   <img src="images/footer/youtube.svg" alt="img">
                 </a>
               </li>
@@ -1890,6 +1899,72 @@
         </div>
       </div>
 
+      <div class="container">
+      <div class="swiper-brands" id="swiper-brands">
+        <div class="footer__title-list">Наші партнери</div>
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="images/brands/coca-cola.png" alt="img">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/brands/tripadvisor.png" alt="img">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/brands/reddit.png" alt="img">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/brands/quora.png" alt="img">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/brands/airbnb.png" alt="img">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/brands/lanta-bank.png" alt="img">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/brands/get.png" alt="img">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/brands/apple.png" alt="img">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/brands/quora.png" alt="img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+      <script>
+        var swiperBrands = new Swiper('#swiper-brands', {
+  
+          speed: 800,
+          slidesPerView: 3,
+          loop: true,
+          spaceBetween: 20,
+         
+          autoplay: {
+            delay: 5000,
+          },
+
+          breakpoints: {
+            1200: {
+              slidesPerView: 8,
+              spaceBetween: 80,
+            },
+            768: {
+              slidesPerView: 6,
+              spaceBetween: 50,
+            },
+            320: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            }
+          },
+  
+        });
+      </script>
 
       <div class="container">
         <div class="footer__info">

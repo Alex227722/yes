@@ -157,7 +157,7 @@ $(function () {
   // });
 
 
-  $('.header-log, .header-log-mob, .form-reg, .sign-in__link').magnificPopup({
+  $('.header-log, .form-reg, .sign-in__link').magnificPopup({
     type: 'inline',
     removalDelay: 300,
     mainClass: 'mfp-fade',
@@ -168,6 +168,20 @@ $(function () {
       }
     }
 
+  });
+  
+
+  $('.card__product-like').magnificPopup({
+    removalDelay: 300,
+    items: {
+      src: '#modal-dialog'
+    },
+
+    callbacks: {
+      close: function () {
+        $('body').removeClass('noscroll');
+      }
+    }
   });
 
 
@@ -237,6 +251,12 @@ $(function () {
   });
 
 
+  $('.counter__plus').on("click", function (event) {
+    $(this).prev().val(+$(this).prev().val() + 1);
+  });
+  $('.counter__minus').on("click", function (event) {
+    if ($(this).next().val() > 0) $(this).next().val(+$(this).next().val() - 1);
+  });
 
   // document.addEventListener('DOMContentLoaded', function () {
   //     // Отримуємо посилання на кнопку "Реєстрація" в першому попапі
@@ -388,11 +408,6 @@ $(function () {
     $('.dark').trigger('click');
   });
 
-
-  $('.header__burg-btn').click(function () {
-    $('.header__cart-wrap').trigger('click');
-  });
-
   
 
   // $('.product__page-box-img-pop-up').magnificPopup({
@@ -419,6 +434,36 @@ $(function () {
   //   $('body').addClass('noscroll');
   // });
 
+
+  // $('.header__list-btn').on("click", function (event) {
+  //   $(this).next('.header__catalog-pop-up-sub-left').slideToggle(300);
+  //   $(this).children('.header__arrow').toggleClass('active');
+  // });
+
+  $('.header__list-btn').on("click", function (event) {
+    var $catalogPopUpSubLeft = $(this).next('.header__catalog-pop-up-sub-left');
+    var $headerArrow = $(this).children('.header__arrow');
+  
+    if ($catalogPopUpSubLeft.is(":visible")) {
+      $catalogPopUpSubLeft.slideUp(500); // Slide up with a duration of 300 milliseconds
+    } else {
+      $catalogPopUpSubLeft.slideDown(500); // Slide down with a duration of 300 milliseconds
+    }
+  
+    $headerArrow.toggleClass('active');
+  });
+  
+
+  $('.card__product-dots').on("click", function (event) {
+    $(this).next().find('.card__product-off').toggleClass('active');
+  });
+
+
+  $('.card__product-off').on("click", function (event) {
+    $(this).parents('.card__product-box').css({
+      'display': 'none',
+    });
+  });
 
   $('.header__cart').on("click", function (event) {
     $('.header__cart-wrap').addClass('active');
@@ -496,34 +541,12 @@ $(function () {
 
 
 
-  $('.form-check-group-pocket-info-svg').hover(function () {
-    $(this).parents().children('.form-check-group-pocket-info-hover').toggleClass('active');
-  });
-
-  if ($(window).width() < 992) {
-    $('.menu-nav-list-item-sub').click(function (event) {
-      $(this).next('.menu-nav-list-sub').addClass('active');
-    });
-  }
 
   $(document).on("click", '.header__sub-menu-btn-close', function (event) {
 
     $(this).parent('.menu-nav-list-sub').removeClass('active');
   });
 
-
-  if ($(window).width() > 992) {
-    $('.menu-nav-list-item-sub').hover(function () {
-      $(this).find('.menu-nav-list-sub').toggleClass('active');
-    });
-  }
-
-  if ($(window).width() > 992) {
-    $('.menu-nav-list-item').hover(function () {
-      $(this).find('.menu-nav-list-sub').toggleClass('active');
-      $(this).children('.menu-nav-list-item-svg').toggleClass('active');
-    });
-  }
 
   $(document).on("click", '.mfp-close', function (event) {
 
@@ -550,11 +573,6 @@ $(function () {
   })
 
 
-  $('.header__burg-btn-close').click(function (event) {
-    $('.header__burger-menu').toggleClass('active');
-    $('.dark-7').removeClass('active');
-    $('body').removeClass('noscroll');
-  });
 
   $('.dark').click(function (event) {
     $('.header__cart-wrap').removeClass('active');

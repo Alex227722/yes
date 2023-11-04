@@ -263,6 +263,7 @@
                     </button>
                   </form>
                   <div class="header__catalog-pop-up">
+                    <div class="section__title">Каталог</div>
                     <div class="rel">
                       <div class="header__catalog-pop-up-left">
 
@@ -271,8 +272,11 @@
                             <h3>Всі товари</h3>
                           </li>
                           <li class="header__catalog-pop-up-list-sub">
-                            <a href="#">
+                            <a class="header__list-btn" href="#">
                               Валізи
+                              <svg class="header__arrow" width="16" height="8" viewBox="0 0 16 8" fill="none">
+                                <path d="M15.0571 0L8.46945 6.50895C8.34266 6.62919 8.17374 6.69633 7.998 6.69633C7.82226 6.69633 7.65334 6.62919 7.52655 6.50895L0.942902 0.00329441L0 0.934933L6.58365 7.44059C6.96498 7.79968 7.47155 8 7.99833 8C8.52512 8 9.03169 7.79968 9.41302 7.44059L16 0.931638L15.0571 0Z" fill="#232126"/>
+                              </svg>                                
                             </a>
                             <div class="header__catalog-pop-up-sub-left">
                               <div class="header__catalog-left-right">
@@ -398,8 +402,11 @@
                             </a>
                           </li>
                           <li class="header__catalog-pop-up-list-sub">
-                            <a href="#">
+                            <a class="header__list-btn" href="#">
                               Акційні товари
+                              <svg class="header__arrow" width="16" height="8" viewBox="0 0 16 8" fill="none">
+                                <path d="M15.0571 0L8.46945 6.50895C8.34266 6.62919 8.17374 6.69633 7.998 6.69633C7.82226 6.69633 7.65334 6.62919 7.52655 6.50895L0.942902 0.00329441L0 0.934933L6.58365 7.44059C6.96498 7.79968 7.47155 8 7.99833 8C8.52512 8 9.03169 7.79968 9.41302 7.44059L16 0.931638L15.0571 0Z" fill="#232126"/>
+                              </svg>   
                             </a>
                             <div class="header__catalog-pop-up-sub-left">
                               <div>
@@ -517,6 +524,48 @@
                                 </ul>
                               </div>
                             </div>
+                            <div class="header__catalog-left-right">
+                                <ul class="header__catalog-pop-up-list-item">
+                                  <li>
+                                    <h3>Матеріал</h3>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Валізи
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Сумки
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Акційні товари
+                                    </a>
+                                  </li>
+                                </ul>
+                                <ul class="header__catalog-pop-up-list-item">
+                                  <li>
+                                    <h3>Призначеня</h3>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Валізи
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Сумки
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Акційні товари
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
                           </li>
                         </ul>
                         <ul class="header__catalog-pop-up-list">
@@ -634,6 +683,7 @@
                     <div class="header__catalog-pop-up-right">
 
                       <div class="card__product-inner">
+
                         <div class="card__product-box">
                           <div class="card__product-item">
                             <div class="card__product-img-box">
@@ -706,20 +756,20 @@
                               <div class="card__product-img-box-filter">
                                 <label class="input-pink input-color" style="--after-before-bg-color: #F0AFB1;">
 
-                                  <input type="radio" name="color" data-src="images/cart/img1.jpg"
+                                  <input type="radio" name="color1" data-src="images/cart/img1.jpg"
                                     data-color="background: radial-gradient(circle, var(--after-before-bg-color, #F0AFB1) 15%, transparent 54%)"
                                     checked>
 
                                 </label>
                                 <label class="input-blue input-color" style="--after-before-bg-color: #547E94;">
 
-                                  <input type="radio" name="color" data-src="images/cart/img2.jpg"
+                                  <input type="radio" name="color1" data-src="images/cart/img2.jpg"
                                     data-color="background: radial-gradient(circle, var(--after-before-bg-color,  #547E94) 15%, transparent 54%);">
 
                                 </label>
                                 <label class="input-gray input-color" style="--after-before-bg-color: #B9B9B9;">
 
-                                  <input type="radio" name="color" data-src="images/cart/img3.jpg"
+                                  <input type="radio" name="color1" data-src="images/cart/img3.jpg"
                                     data-color="background: radial-gradient(circle, rgba(190,148,184,1) 15%, rgba(184,153,184,0) 54%);">
 
                                 </label>
@@ -742,24 +792,111 @@
                                 </svg>
                               </button>
                             </div>
+
                           </div>
                         </div>
+                        <div class="card__product-box">
+                          <div class="card__product-item">
+                            <div class="card__product-img-box">
+                              <a href="#" class="card__product-img">
+                                <img class="card__img" src="images/cart/img1.jpg" alt="img">
+                                <span class="card__img-color"></span>
+                              </a>
+                            </div>
 
+                            <div class="card__product-center">
+                              <a class="card__product-center-title" href="#">Рожева валіза</a>
+                              <span class="card__product-center-info">100/20/30 | 30 кг. | 120 л.</span>
+
+                              <div class="card__product-img-box-filter">
+                                <label class="input-pink input-color" style="--after-before-bg-color: #F0AFB1;">
+
+                                  <input type="radio" name="color1" data-src="images/cart/img1.jpg"
+                                    data-color="background: radial-gradient(circle, var(--after-before-bg-color, #F0AFB1) 15%, transparent 54%)"
+                                    checked>
+
+                                </label>
+                                <label class="input-blue input-color" style="--after-before-bg-color: #547E94;">
+
+                                  <input type="radio" name="color1" data-src="images/cart/img2.jpg"
+                                    data-color="background: radial-gradient(circle, var(--after-before-bg-color,  #547E94) 15%, transparent 54%);">
+
+                                </label>
+                                <label class="input-gray input-color" style="--after-before-bg-color: #B9B9B9;">
+
+                                  <input type="radio" name="color1" data-src="images/cart/img3.jpg"
+                                    data-color="background: radial-gradient(circle, rgba(190,148,184,1) 15%, rgba(184,153,184,0) 54%);">
+
+                                </label>
+                              </div>
+                            </div>
+                            <div class="card__product-price-box">
+                              <span class="card__product-price">1200 ₴</span>
+                              <button class="card__product-like" type="button">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none">
+                                  <g clip-path="url(#clip0_938_10300)">
+                                    <path
+                                      d="M21.8749 2.89648C20.4674 2.91838 19.0905 3.3113 17.8834 4.03557C16.6763 4.75985 15.6816 5.78982 14.9999 7.02148C14.3182 5.78982 13.3236 4.75985 12.1165 4.03557C10.9094 3.3113 9.53251 2.91838 8.12495 2.89648C5.88112 2.99397 3.76708 3.97555 2.24468 5.62678C0.722272 7.278 -0.0847403 9.46464 -5.21364e-05 11.709C-5.21364e-05 17.3927 5.98245 23.6002 10.9999 27.809C12.1202 28.7504 13.5366 29.2665 14.9999 29.2665C16.4633 29.2665 17.8797 28.7504 18.9999 27.809C24.0174 23.6002 29.9999 17.3927 29.9999 11.709C30.0846 9.46464 29.2776 7.278 27.7552 5.62678C26.2328 3.97555 24.1188 2.99397 21.8749 2.89648ZM17.3937 25.8965C16.7237 26.4607 15.8759 26.7701 14.9999 26.7701C14.124 26.7701 13.2762 26.4607 12.6062 25.8965C6.1837 20.5077 2.49995 15.3377 2.49995 11.709C2.4145 10.1274 2.95791 8.57615 4.01165 7.39361C5.0654 6.21107 6.54399 5.49317 8.12495 5.39648C9.70591 5.49317 11.1845 6.21107 12.2382 7.39361C13.292 8.57615 13.8354 10.1274 13.7499 11.709C13.7499 12.0405 13.8816 12.3584 14.1161 12.5929C14.3505 12.8273 14.6684 12.959 14.9999 12.959C15.3315 12.959 15.6494 12.8273 15.8838 12.5929C16.1183 12.3584 16.2499 12.0405 16.2499 11.709C16.1645 10.1274 16.7079 8.57615 17.7617 7.39361C18.8154 6.21107 20.294 5.49317 21.8749 5.39648C23.4559 5.49317 24.9345 6.21107 25.9882 7.39361C27.042 8.57615 27.5854 10.1274 27.4999 11.709C27.4999 15.3377 23.8162 20.5077 17.3937 25.8915V25.8965Z"
+                                      fill="#232126" />
+                                  </g>
+                                  <defs>
+                                    <clipPath id="clip0_938_10300">
+                                      <rect width="30" height="30" fill="white" transform="translate(0 0.5)" />
+                                    </clipPath>
+                                  </defs>
+                                </svg>
+                              </button>
+                            </div>
+
+                          </div>
+                        </div>
+   
                       </div>
+                      <a class="btn btn-default card__product-more" href="#">Переглянути більше</a>
                     </div>
 
                   </div>
                 </div>
 
-                <div class="header__burg-btn-box">
-                  <button class="header__burg-btn" type="button">
-                    <span>
-                    </span>
-                  </button>
-                </div>
-
-
                 <div class="header__bottom-left">
+
+                  <button class="header__catolog-btn header__catolog-btn-bt">
+                    <svg class="header__catolog-svg-1" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <g clip-path="url(#clip0_918_7356)">
+                        <path
+                          d="M7 6H23C23.2652 6 23.5196 5.89464 23.7071 5.70711C23.8946 5.51957 24 5.26522 24 5C24 4.73478 23.8946 4.48043 23.7071 4.29289C23.5196 4.10536 23.2652 4 23 4H7C6.73478 4 6.48043 4.10536 6.29289 4.29289C6.10536 4.48043 6 4.73478 6 5C6 5.26522 6.10536 5.51957 6.29289 5.70711C6.48043 5.89464 6.73478 6 7 6Z"
+                          fill="#232126" />
+                        <path
+                          d="M23 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H23C23.2652 13 23.5196 12.8946 23.7071 12.7071C23.8946 12.5196 24 12.2652 24 12C24 11.7348 23.8946 11.4804 23.7071 11.2929C23.5196 11.1054 23.2652 11 23 11Z"
+                          fill="#232126" />
+                        <path
+                          d="M23 18H7C6.73478 18 6.48043 18.1054 6.29289 18.2929C6.10536 18.4804 6 18.7348 6 19C6 19.2652 6.10536 19.5196 6.29289 19.7071C6.48043 19.8946 6.73478 20 7 20H23C23.2652 20 23.5196 19.8946 23.7071 19.7071C23.8946 19.5196 24 19.2652 24 19C24 18.7348 23.8946 18.4804 23.7071 18.2929C23.5196 18.1054 23.2652 18 23 18Z"
+                          fill="#232126" />
+                        <path
+                          d="M2 7C3.10457 7 4 6.10457 4 5C4 3.89543 3.10457 3 2 3C0.89543 3 0 3.89543 0 5C0 6.10457 0.89543 7 2 7Z"
+                          fill="#232126" />
+                        <path
+                          d="M2 14C3.10457 14 4 13.1046 4 12C4 10.8954 3.10457 10 2 10C0.89543 10 0 10.8954 0 12C0 13.1046 0.89543 14 2 14Z"
+                          fill="#232126" />
+                        <path
+                          d="M2 21C3.10457 21 4 20.1046 4 19C4 17.8954 3.10457 17 2 17C0.89543 17 0 17.8954 0 19C0 20.1046 0.89543 21 2 21Z"
+                          fill="#232126" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_918_7356">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg class="header__catolog-svg-2" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M19.7557 0.243989C19.5994 0.0877628 19.3875 0 19.1665 0C18.9455 0 18.7336 0.0877628 18.5773 0.243989L9.99982 8.82149L1.42232 0.243989C1.26605 0.0877628 1.05413 0 0.833155 0C0.612185 0 0.400262 0.0877628 0.243989 0.243989C0.0877628 0.400262 0 0.612185 0 0.833155C0 1.05413 0.0877628 1.26605 0.243989 1.42232L8.82149 9.99982L0.243989 18.5773C0.0877628 18.7336 0 18.9455 0 19.1665C0 19.3875 0.0877628 19.5994 0.243989 19.7557C0.400262 19.9119 0.612185 19.9996 0.833155 19.9996C1.05413 19.9996 1.26605 19.9119 1.42232 19.7557L9.99982 11.1782L18.5773 19.7557C18.7336 19.9119 18.9455 19.9996 19.1665 19.9996C19.3875 19.9996 19.5994 19.9119 19.7557 19.7557C19.9119 19.5994 19.9996 19.3875 19.9996 19.1665C19.9996 18.9455 19.9119 18.7336 19.7557 18.5773L11.1782 9.99982L19.7557 1.42232C19.9119 1.26605 19.9996 1.05413 19.9996 0.833155C19.9996 0.612185 19.9119 0.400262 19.7557 0.243989Z"
+                        fill="black" />
+                    </svg>
+
+                  </button>
+
+
                   <div class="header__planet-box">
                     <button class="header__planet" type="button">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -817,7 +954,6 @@
                       </defs>
                     </svg>
 
-
                     <span>2</span>
                   </button>
 
@@ -839,6 +975,7 @@
                     </svg>
 
                   </a>
+
                 </div>
               </div>
             </div>
@@ -869,7 +1006,7 @@
 
               <div class="main-swiper-text-box">
                 <span class="main-swiper-title">незабутні пригоди з вашою найкращою валізою</span>
-                <a class="btn btn-primary main-swiper-link" href="#">Дізнатися більше</a>
+                <a class="btn btn-default main-swiper-link" href="#">Дізнатися більше</a>
               </div>
 
             </div>
@@ -882,7 +1019,7 @@
 
               <div class="main-swiper-text-box">
                 <span class="main-swiper-title">наша нова колекція в яку ви закохаєтесь</span>
-                <a class="btn btn-primary main-swiper-link" href="#">Дізнатися більше</a>
+                <a class="btn btn-default main-swiper-link" href="#">Дізнатися більше</a>
               </div>
 
             </div>
@@ -895,7 +1032,7 @@
 
               <div class="main-swiper-text-box">
                 <span class="main-swiper-title">незабутні пригоди з вашою найкращою валізою</span>
-                <a class="btn btn-primary main-swiper-link" href="#">Дізнатися більше</a>
+                <a class="btn btn-default main-swiper-link" href="#">Дізнатися більше</a>
               </div>
 
             </div>
@@ -918,7 +1055,6 @@
         slidesPerView: 1,
         loop: true,
         spaceBetween: 10,
-        touchRatio: 1,
 
         keyboard: {
           enabled: true,
@@ -951,7 +1087,6 @@
           992: {
             slidesPerView: 1,
             spaceBetween: 30,
-            touchRatio: 0
           },
           575: {
             slidesPerView: 1,
@@ -1467,6 +1602,7 @@
 
 
       <div class="header__cart-product">
+
         <!--
           <div class="header__cart-top" style="display: none;">
           <div class="form-pop-up-title">Кошик пустий</div>
@@ -1477,6 +1613,7 @@
         <div class="header__cart-full-empty">
 
           <div class="header__scroll">
+
             <div class="card__product-inner">
               <div class="card__product-box">
                 <div class="card__product-item">
@@ -1490,45 +1627,47 @@
                   <div class="card__product-center">
                     <a class="card__product-center-title" href="#">Рожева валіза</a>
                     <span class="card__product-center-info">100/20/30 | 30 кг. | 120 л.</span>
-
-                    <div class="card__product-img-box-filter">
-                      <label class="input-pink input-color" style="--after-before-bg-color: #F0AFB1;">
-
-                        <input type="radio" name="color1" data-src="images/cart/img1.jpg"
-                          data-color="background: radial-gradient(circle, var(--after-before-bg-color, #F0AFB1) 15%, transparent 54%)"
-                          checked>
-
-                      </label>
-                      <label class="input-blue input-color" style="--after-before-bg-color: #547E94;">
-
-                        <input type="radio" name="color1" data-src="images/cart/img2.jpg"
-                          data-color="background: radial-gradient(circle, var(--after-before-bg-color,  #547E94) 15%, transparent 54%);">
-
-                      </label>
-                      <label class="input-gray input-color" style="--after-before-bg-color: #B9B9B9;">
-
-                        <input type="radio" name="color1" data-src="images/cart/img3.jpg"
-                          data-color="background: radial-gradient(circle, rgba(190,148,184,1) 15%, rgba(184,153,184,0) 54%);">
-
-                      </label>
-                    </div>
-                  </div>
-                  <div class="card__product-price-box">
                     <span class="card__product-price">1200 ₴</span>
-                    <button class="card__product-like" type="button">
-                      <svg width="30" height="31" viewBox="0 0 30 31" fill="none">
-                        <g clip-path="url(#clip0_938_10300)">
-                          <path
-                            d="M21.8749 2.89648C20.4674 2.91838 19.0905 3.3113 17.8834 4.03557C16.6763 4.75985 15.6816 5.78982 14.9999 7.02148C14.3182 5.78982 13.3236 4.75985 12.1165 4.03557C10.9094 3.3113 9.53251 2.91838 8.12495 2.89648C5.88112 2.99397 3.76708 3.97555 2.24468 5.62678C0.722272 7.278 -0.0847403 9.46464 -5.21364e-05 11.709C-5.21364e-05 17.3927 5.98245 23.6002 10.9999 27.809C12.1202 28.7504 13.5366 29.2665 14.9999 29.2665C16.4633 29.2665 17.8797 28.7504 18.9999 27.809C24.0174 23.6002 29.9999 17.3927 29.9999 11.709C30.0846 9.46464 29.2776 7.278 27.7552 5.62678C26.2328 3.97555 24.1188 2.99397 21.8749 2.89648ZM17.3937 25.8965C16.7237 26.4607 15.8759 26.7701 14.9999 26.7701C14.124 26.7701 13.2762 26.4607 12.6062 25.8965C6.1837 20.5077 2.49995 15.3377 2.49995 11.709C2.4145 10.1274 2.95791 8.57615 4.01165 7.39361C5.0654 6.21107 6.54399 5.49317 8.12495 5.39648C9.70591 5.49317 11.1845 6.21107 12.2382 7.39361C13.292 8.57615 13.8354 10.1274 13.7499 11.709C13.7499 12.0405 13.8816 12.3584 14.1161 12.5929C14.3505 12.8273 14.6684 12.959 14.9999 12.959C15.3315 12.959 15.6494 12.8273 15.8838 12.5929C16.1183 12.3584 16.2499 12.0405 16.2499 11.709C16.1645 10.1274 16.7079 8.57615 17.7617 7.39361C18.8154 6.21107 20.294 5.49317 21.8749 5.39648C23.4559 5.49317 24.9345 6.21107 25.9882 7.39361C27.042 8.57615 27.5854 10.1274 27.4999 11.709C27.4999 15.3377 23.8162 20.5077 17.3937 25.8915V25.8965Z"
-                            fill="#232126" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_938_10300">
-                            <rect width="30" height="30" fill="white" transform="translate(0 0.5)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </button>
+                  </div>
+
+
+                  <div class="card__product-price-box">
+                    <button class="card__product-dots" type="button">&#183;&#183;&#183;</button>
+
+                    <div class="counter">
+                      <div class="counter__calc">
+                        <button class="card__product-off" type="button">Видалити з кошика</button>
+                        <button class="counter__minus" type="button" name="button">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <g clip-path="url(#clip0_1026_11385)">
+                              <path
+                                d="M16.7514 24.7437L6.87836 14.8707C6.31595 14.3081 6 13.5452 6 12.7497C6 11.9542 6.31595 11.1913 6.87836 10.6287L16.7454 0.761719L18.1594 2.17572L8.29236 12.0427C8.10489 12.2302 7.99957 12.4846 7.99957 12.7497C7.99957 13.0149 8.10489 13.2692 8.29236 13.4567L18.1654 23.3297L16.7514 24.7437Z"
+                                fill="#AFB3BB" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_1026_11385">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.75)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                        <input class="counter__input" type="text" id="1" value="0">
+                        <button class="counter__plus" type="button" name="button">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <g clip-path="url(#clip0_1026_11391)">
+                              <path
+                                d="M7.412 24.7496L6 23.3376L15.881 13.4566C16.0685 13.2691 16.1738 13.0148 16.1738 12.7496C16.1738 12.4844 16.0685 12.2301 15.881 12.0426L6.017 2.1806L7.431 0.766602L17.293 10.6286C17.8554 11.1912 18.1714 11.9541 18.1714 12.7496C18.1714 13.5451 17.8554 14.308 17.293 14.8706L7.412 24.7496Z"
+                                fill="#232126" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_1026_11391">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.75)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                   </div>
 
                 </div>
@@ -1546,60 +1685,67 @@
                   <div class="card__product-center">
                     <a class="card__product-center-title" href="#">Рожева валіза</a>
                     <span class="card__product-center-info">100/20/30 | 30 кг. | 120 л.</span>
+                    <span class="card__product-price">1200 ₴</span>
+                  </div>
 
-                    <div class="card__product-img-box-filter">
-                      <label class="input-pink input-color" style="--after-before-bg-color: #F0AFB1;">
 
-                        <input type="radio" name="color" data-src="images/cart/img1.jpg"
-                          data-color="background: radial-gradient(circle, var(--after-before-bg-color, #F0AFB1) 15%, transparent 54%)"
-                          checked>
+                  <div class="card__product-price-box">
+                    <button class="card__product-dots" type="button">&#183;&#183;&#183;</button>
 
-                      </label>
-                      <label class="input-blue input-color" style="--after-before-bg-color: #547E94;">
-
-                        <input type="radio" name="color" data-src="images/cart/img2.jpg"
-                          data-color="background: radial-gradient(circle, var(--after-before-bg-color,  #547E94) 15%, transparent 54%);">
-
-                      </label>
-                      <label class="input-gray input-color" style="--after-before-bg-color: #B9B9B9;">
-
-                        <input type="radio" name="color" data-src="images/cart/img3.jpg"
-                          data-color="background: radial-gradient(circle, rgba(190,148,184,1) 15%, rgba(184,153,184,0) 54%);">
-
-                      </label>
+                    <div class="counter">
+                      <div class="counter__calc">
+                        <button class="card__product-off" type="button">Видалити з кошика</button>
+                        <button class="counter__minus" type="button" name="button">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <g clip-path="url(#clip0_1026_11385)">
+                              <path
+                                d="M16.7514 24.7437L6.87836 14.8707C6.31595 14.3081 6 13.5452 6 12.7497C6 11.9542 6.31595 11.1913 6.87836 10.6287L16.7454 0.761719L18.1594 2.17572L8.29236 12.0427C8.10489 12.2302 7.99957 12.4846 7.99957 12.7497C7.99957 13.0149 8.10489 13.2692 8.29236 13.4567L18.1654 23.3297L16.7514 24.7437Z"
+                                fill="#AFB3BB" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_1026_11385">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.75)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                        <input class="counter__input" type="text" id="1" value="0">
+                        <button class="counter__plus" type="button" name="button">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <g clip-path="url(#clip0_1026_11391)">
+                              <path
+                                d="M7.412 24.7496L6 23.3376L15.881 13.4566C16.0685 13.2691 16.1738 13.0148 16.1738 12.7496C16.1738 12.4844 16.0685 12.2301 15.881 12.0426L6.017 2.1806L7.431 0.766602L17.293 10.6286C17.8554 11.1912 18.1714 11.9541 18.1714 12.7496C18.1714 13.5451 17.8554 14.308 17.293 14.8706L7.412 24.7496Z"
+                                fill="#232126" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_1026_11391">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.75)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  <div class="card__product-price-box">
-                    <span class="card__product-price">1200 ₴</span>
-                    <button class="card__product-like" type="button">
-                      <svg width="30" height="31" viewBox="0 0 30 31" fill="none">
-                        <g clip-path="url(#clip0_938_10300)">
-                          <path
-                            d="M21.8749 2.89648C20.4674 2.91838 19.0905 3.3113 17.8834 4.03557C16.6763 4.75985 15.6816 5.78982 14.9999 7.02148C14.3182 5.78982 13.3236 4.75985 12.1165 4.03557C10.9094 3.3113 9.53251 2.91838 8.12495 2.89648C5.88112 2.99397 3.76708 3.97555 2.24468 5.62678C0.722272 7.278 -0.0847403 9.46464 -5.21364e-05 11.709C-5.21364e-05 17.3927 5.98245 23.6002 10.9999 27.809C12.1202 28.7504 13.5366 29.2665 14.9999 29.2665C16.4633 29.2665 17.8797 28.7504 18.9999 27.809C24.0174 23.6002 29.9999 17.3927 29.9999 11.709C30.0846 9.46464 29.2776 7.278 27.7552 5.62678C26.2328 3.97555 24.1188 2.99397 21.8749 2.89648ZM17.3937 25.8965C16.7237 26.4607 15.8759 26.7701 14.9999 26.7701C14.124 26.7701 13.2762 26.4607 12.6062 25.8965C6.1837 20.5077 2.49995 15.3377 2.49995 11.709C2.4145 10.1274 2.95791 8.57615 4.01165 7.39361C5.0654 6.21107 6.54399 5.49317 8.12495 5.39648C9.70591 5.49317 11.1845 6.21107 12.2382 7.39361C13.292 8.57615 13.8354 10.1274 13.7499 11.709C13.7499 12.0405 13.8816 12.3584 14.1161 12.5929C14.3505 12.8273 14.6684 12.959 14.9999 12.959C15.3315 12.959 15.6494 12.8273 15.8838 12.5929C16.1183 12.3584 16.2499 12.0405 16.2499 11.709C16.1645 10.1274 16.7079 8.57615 17.7617 7.39361C18.8154 6.21107 20.294 5.49317 21.8749 5.39648C23.4559 5.49317 24.9345 6.21107 25.9882 7.39361C27.042 8.57615 27.5854 10.1274 27.4999 11.709C27.4999 15.3377 23.8162 20.5077 17.3937 25.8915V25.8965Z"
-                            fill="#232126" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_938_10300">
-                            <rect width="30" height="30" fill="white" transform="translate(0 0.5)" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </button>
-                  </div>
+
                 </div>
               </div>
 
             </div>
-          </div>
-          <div class="header__cart-order">
-            <span class="header__order-title">Всього:</span>
-            <span class="header__price-all">4800 грн</span>
-            <div class="header__cart-order-inner">
-              <a class="header__order-link btn btn-default" href="#">Оформити замовлення</a>
-              <a class="header__order-link btn btn-primary" href="#">Швидке замовлення</a>
+
+            <div class="header__cart-order">
+              <div class="header__cart-price-box">
+                <span class="header__order-title">Всього:</span>
+                <span class="header__price-all">4800 грн</span>
+              </div>
+              <div class="header__cart-order-inner">
+                <a class="header__order-link btn btn-primary" href="#">Оформити замовлення</a>
+                <a class="header__order-link btn btn-secondary" href="#">Швидке замовлення</a>
+              </div>
             </div>
+
           </div>
-          
+
         </div>
       </div>
     </div>
